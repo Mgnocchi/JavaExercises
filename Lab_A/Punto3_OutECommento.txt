@@ -1,0 +1,48 @@
+Sequence 1: AAUGCCAUUGACGG
+Sequence 2: CAGCCUCGCUUAG
+Max score: 9.000
+AAUGCCAUUGAC--GG
+.| ||| |.| |  .|
+CA-GCC-UCG-CUUAG
+
+------------------------------------- SCORES
+
+ |C	|A	|G	|C	|C	|U	|C	|G	|C	|U	|U	|A	|G	|
+A|0.33	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|1.00	|
+A|0.33	|1.33	|1.33	|1.33	|1.33	|1.33	|1.33	|1.33	|1.33	|1.33	|1.33	|2.00	|2.00	|
+U|0.33	|1.33	|1.67	|1.67	|1.67	|2.33	|2.33	|2.33	|2.33	|2.33	|2.33	|2.33	|2.33	|
+G|0.33	|1.33	|2.33	|2.33	|2.33	|2.33	|2.67	|3.33	|3.33	|3.33	|3.33	|3.33	|3.33	|
+C|1.00	|1.33	|2.33	|3.33	|3.33	|3.33	|3.33	|3.33	|4.33	|4.33	|4.33	|4.33	|4.33	|
+C|1.00	|1.33	|2.33	|3.33	|4.33	|4.33	|4.33	|4.33	|4.33	|4.67	|4.67	|4.67	|4.67	|
+A|1.00	|2.00	|2.33	|3.33	|4.33	|4.67	|4.67	|4.67	|4.67	|4.67	|5.00	|5.67	|5.67	|
+U|1.00	|2.00	|2.33	|3.33	|4.33	|5.33	|5.33	|5.33	|5.33	|5.67	|5.67	|5.67	|6.00	|
+U|1.00	|2.00	|2.33	|3.33	|4.33	|5.33	|5.67	|5.67	|5.67	|6.33	|6.67	|6.67	|6.67	|
+G|1.00	|2.00	|3.00	|3.33	|4.33	|5.33	|5.67	|6.67	|6.67	|6.67	|6.67	|7.00	|7.67	|
+A|1.00	|2.00	|3.00	|3.33	|4.33	|5.33	|5.67	|6.67	|7.00	|7.00	|7.00	|7.67	|7.67	|
+C|1.00	|2.00	|3.00	|4.00	|4.33	|5.33	|6.33	|6.67	|7.67	|7.67	|7.67	|7.67	|8.00	|
+G|1.00	|2.00	|3.00	|4.00	|4.33	|5.33	|6.33	|7.33	|7.67	|8.00	|8.00	|8.00	|8.67	|
+G|1.00	|2.00	|3.00	|4.00	|4.33	|5.33	|6.33	|7.33	|7.67	|8.00	|8.33	|8.33	|9.00	|
+
+------------------------------------- POINTERS
+
+ |C	|A	|G	|C	|C	|U	|C	|G	|C	|U	|U	|A	|G	|
+A|d	|d	|u	|u	|u	|u	|u	|u	|u	|u	|u	|d	|u	|
+A|d	|d	|d	|d	|d	|d	|d	|d	|d	|d	|d	|d	|u	|
+U|d	|l	|d	|d	|d	|d	|u	|u	|u	|d	|d	|u	|d	|
+G|d	|l	|d	|u	|u	|u	|d	|d	|u	|u	|u	|u	|d	|
+C|d	|l	|l	|d	|d	|u	|d	|u	|d	|u	|u	|u	|u	|
+C|d	|d	|l	|d	|d	|u	|d	|u	|d	|d	|d	|d	|d	|
+A|l	|d	|l	|l	|l	|d	|d	|d	|d	|d	|d	|d	|u	|
+U|l	|l	|d	|l	|l	|d	|u	|u	|u	|d	|d	|u	|d	|
+U|l	|l	|d	|l	|l	|d	|d	|d	|d	|d	|d	|u	|u	|
+G|l	|l	|d	|l	|l	|l	|d	|d	|u	|u	|d	|d	|d	|
+A|l	|d	|l	|d	|l	|l	|d	|l	|d	|d	|d	|d	|u	|
+C|d	|l	|l	|d	|d	|l	|d	|l	|d	|u	|u	|u	|d	|
+G|l	|l	|d	|l	|l	|l	|l	|d	|l	|d	|d	|d	|d	|
+G|l	|l	|d	|l	|l	|l	|l	|d	|d	|d	|d	|d	|d	|
+
+
+ #COMMENTO
+ 
+Si osserva facilmente che l'impossibilità di andare sotto zero, e ancor più significativamente di ridurre gli score, porta a risultati sempre crescenti che quindi porteranno inevitabilmente ad un punteggio massimo in ultima cella.
+Questo consente allineamenti mediamente più lunghi, ma non controseleziona se non debolmente, la presenza di gap in tali allineamenti.
